@@ -1,4 +1,6 @@
 .vscode/**
-.gitignore
+.trunk/**
 node_modules/**
+.gitignore
+.git/**
 *.vsix

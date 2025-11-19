@@ -27,7 +27,13 @@ Extension VSCode/Cursor pour exécuter des requêtes AWS Athena avec gestion de 
 ### Depuis le package
 
 1. Télécharger le fichier `.vsix`
-2. Dans VSCode/Cursor : `Extensions` > `...` > `Install from VSIX`
+2. Installer via l'interface : `Extensions` > `...` > `Install from VSIX`
+
+Ou en ligne de commande :
+
+```bash
+code --install-extension athena-query-runner-1.0.0.vsix
+```
 
 ## Utilisation
 
@@ -87,6 +93,20 @@ npm install
 # Lancer en mode développement
 # Appuyer sur F5 dans VSCode
 ```
+
+## Générer le package .vsix
+
+Pour créer le fichier d'installation `.vsix` :
+
+```bash
+# Installer vsce (si pas déjà installé)
+npm install -g @vscode/vsce
+
+# Générer le package
+vsce package
+```
+
+Le fichier `.vsix` sera créé dans le dossier racine du projet.
 
 ## License
 
