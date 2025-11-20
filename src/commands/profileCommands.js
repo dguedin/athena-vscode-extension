@@ -10,7 +10,7 @@ async function createProfile(provider) {
     
     const awsProfile = await vscode.window.showInputBox({ 
         prompt: 'AWS Profile name',
-        value: 'signature-data-dev'
+        value: 'profil-name'
     });
     if (!awsProfile) return;
     
@@ -22,7 +22,7 @@ async function createProfile(provider) {
     
     const outputLocation = await vscode.window.showInputBox({ 
         prompt: 'S3 Output Location',
-        value: 's3://puydufou-athena-output-dev/'
+        value: 's3 output athena'
     });
     if (!outputLocation) return;
     

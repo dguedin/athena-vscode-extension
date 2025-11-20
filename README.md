@@ -43,9 +43,9 @@ code --install-extension athena-query-runner-1.0.0.vsix
 - Cliquer sur le bouton `+` dans la section "Profiles"
 - Remplir les informations :
   - Nom du profil
-  - Profil AWS (ex: `signature-data-dev`)
-  - Région (ex: `eu-west-1`)
-  - Bucket S3 de sortie (ex: `s3://puydufou-athena-output-dev/`)
+  - Profil AWS (ex: `profil-name`)
+  - Région (ex: `your-region`)
+  - Bucket S3 de sortie (ex: `output s3 athena`)
   - Base de données par défaut
 
 ### 2. Sélectionner un profil
